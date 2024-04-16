@@ -1,8 +1,19 @@
- <html>
- <head>
-   <title>Home</title>
- </head>
- <body>
-   <h1>Hello World!</h1>
- </body>
- </html>
+<html>
+
+<head>
+  <title>Home</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+      var bot = window.Telegram.WebApp;
+      bot.MainButton.setText('Test button');
+      bot.MainButton.show();
+    }, false);
+  </script>
+</head>
+
+<body>
+  <h1>Hello World!</h1>
+</body>
+
+</html>
