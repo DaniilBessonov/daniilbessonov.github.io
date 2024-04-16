@@ -7,7 +7,10 @@
     document.addEventListener('DOMContentLoaded', function () {
       var bot = window.Telegram.WebApp;
       bot.MainButton.setText('Test button');
-      bot.MainButton.show();
+      bot.MainButton.onClick(function (){
+        bot.close();
+      });
+      bot.MainButton.show();  
     }, false);
   </script>
 </head>
